@@ -1,0 +1,9 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: mali
+Description: Mali GPU User-Space Binary Drivers
+Version: 1.9.0
+Libs: -L${libdir} -lmali -lMali
+Cflags:-I${includedir}

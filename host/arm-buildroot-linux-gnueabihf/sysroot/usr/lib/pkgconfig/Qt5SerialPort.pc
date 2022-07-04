@@ -1,0 +1,13 @@
+prefix=/home/nopparat/host/arm-buildroot-linux-gnueabihf/sysroot/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include/qt5
+
+
+Name: Qt5 SerialPort
+Description: Qt SerialPort module
+Version: 5.14.2
+Libs: -L${libdir} -lQt5SerialPort 
+Cflags: -DQT_SERIALPORT_LIB -I${includedir}/QtSerialPort -I${includedir}
+Requires: Qt5Core
+

@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: librga
+Description: Userspace interface to Rockchip RGA 2D accelerator
+Version: 2.0.0
+Requires.private: libdrm >=  2.4.0
+Libs: -L${libdir} -lrga
+Cflags:-I${includedir}

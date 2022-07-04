@@ -1,0 +1,13 @@
+QT.waylandcompositor_private.VERSION = 5.14.2
+QT.waylandcompositor_private.name = QtWaylandCompositor
+QT.waylandcompositor_private.module =
+QT.waylandcompositor_private.libs = $$QT_MODULE_LIB_BASE
+QT.waylandcompositor_private.includes = $$QT_MODULE_INCLUDE_BASE/QtWaylandCompositor/5.14.2 $$QT_MODULE_INCLUDE_BASE/QtWaylandCompositor/5.14.2/QtWaylandCompositor
+QT.waylandcompositor_private.frameworks =
+QT.waylandcompositor_private.depends = gui_private core_private qml_private quick_private waylandcompositor xkbcommon_support_private
+QT.waylandcompositor_private.uses =
+QT.waylandcompositor_private.module_config = v2 internal_module
+QT.waylandcompositor_private.enabled_features = wayland-server wayland-datadevice wayland-dmabuf-client-buffer wayland-dmabuf-server-buffer wayland-drm-egl-server-buffer wayland-egl wayland-shm-emulation-server-buffer
+QT.waylandcompositor_private.disabled_features = wayland-brcm wayland-layer-integration-vsp2 wayland-libhybris-egl-server-buffer wayland-vulkan-server-buffer xcomposite-egl xcomposite-glx
+QMAKE_LIBS_WAYLAND_SERVER = -L/home/nopparat/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -lwayland-server
+QMAKE_LIBS_WAYLAND_EGL = -L/home/nopparat/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -lmali -lwayland-egl

@@ -1,0 +1,10 @@
+prefix=/home/nopparat/host
+exec_prefix=/home/nopparat/host
+libdir=/home/nopparat/host/lib
+includedir=/home/nopparat/host/include
+
+Name: smartcols
+Description: table or tree library
+Version: 2.31.1
+Cflags: -I${includedir}/libsmartcols
+Libs: -L${libdir} -lsmartcols
